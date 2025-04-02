@@ -280,6 +280,16 @@ Link: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1
 
 ---
 
+## “Ten Years of Sharing Reproducible Research” by Limor Peer, PhD (Yale University)
+
+This article reflects on a decade of advancements in promoting reproducibility in research, especially the challenges and successes of Yale’s ISPS Data Archive. It addresses the challenges faced when trying to reuse shared data and code, especially the common obstacles such as poor documentation, software incompatibility, and computational failures that may hinder reproducibility. Curators as well as their importance in ensuring long-term accessibility is also highlighted alongside YARD, a workflow tool that enhances data curation and verification. Open science initiatives and journal policies have improved reproducibility; however, challenges remain, such maintaining functional code over time and integrating automation with human oversight. This piece offers valuable insights into the evolving landscape of research transparency and the critical role of structured data stewardship.
+
+Link: https://researchdataq.org/editorials/ten-years-of-sharing-reproducible-research/ 
+
+> Contributor: Moegamad Uzair Jack
+
+---
+
 ## Centre of Open Science's Transparency and Openess Promotion Guidelines
 
 The Transparency and Openness Promotion (TOP) guidelines from the Centre for Open Science (COS) provides a framework for improved transparency, reproducibility, and overall integrity in research. Introduced in 2015, these guidelines set 8 standards with different levels of implementation for researchers and journals to strive for in the movement towards open science. These include citation standards, replication, and data or analytical methods transparency among others. This website allows you to explore these guidelines and understand best practices to improve your own research. You can also search for specific journals to see what measures they are taking to ensure the transparency of the work they publish. These guidelines help build a strong foundation for reducing error and bias in research, and encourage collaboration and replication between researchers thereby increasing the credibility and visibility of scientific research being done. 
@@ -412,4 +422,5 @@ The paper states that the 21st century is the century of data science. It then p
 Link: https://doi.org/10.1098/rspb.2020.2597
 
 > Contributor: Naval
+
 
