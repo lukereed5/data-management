@@ -29,6 +29,15 @@ That should be it!
 
 ---
 
+## Multi-Stakeholder Research Data Management Training as a Tool to Improve the Quality, Integrity, Reliability and Reproducibility of Research
+
+This paper focuses on something very important for data management and reproducible research: it evaluates a training program designed to enhance research data management (RDM) competencies among doctoral students and postdoctoral researchers. The program was quite interesting because it was collaborative, bringing together multiple stakeholders. It was also at a generic level, which means it was designed not to be overly specific to one discipline but rather relevant across a range of disciplines. Their finding was essentially that training can improve understanding of RDM practices. Feedback and competency ratings from participants in the program indicated that "key RDM practices, such as data planning, documentation, and organization, were better understood after the training."
+
+https://liberquarterly.eu/article/view/11726/13897
+Ayanda
+
+---
+
 ## Lisa DeBruine and Dale Barr (2021) "Data Skills for Reproducible Research" 
 
 Producing reproducible research requires learning certain skills and tools which allow for efficiently managing your data and record details of your analysis. DeBruine and Barr first show how to create a project in R Studio and the benefits for your reproducible workflow in doing so as you have a clear filing system which makes reading in data easy, for example. Secondly, an introductory tutorial on R Markdown is covered including how to embed exploratory visual analyses, such as figures, and tables, and preliminary analysis results in your R Markdown script. Finally, citing statistical packages is covered, which is essential in making the process of your data analysis more transparent and easier to replicate.
@@ -269,6 +278,8 @@ Link: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1
 
 > Contributor: Arwenn
 
+---
+
 ## TEDxCapeTown: Mike Markovina - Moving Sushi
 
 Moving Sushi co-founder Mike Markovina discusses the findings of the Marine Resource Expedition (2008–2010), a 24-month trip through 42 nations that documented successful marine conservation initiatives. In order to comprehend the social, economic, and ecological aspects of marine resource protection, he highlights the significance of open-access data and cooperative research.  Markovina emphasises that transparent research and efficient data management are essential for well-informed decision-making and long-term marine conservation strategies.  In order to bring about significant change, he promotes a change in viewpoint that emphasises community involvement and the human aspects of managing maritime resources.  By means of narratives and visual documentation, Markovina demonstrates how information exchange and transparency may motivate group efforts to save our oceans.
@@ -276,3 +287,79 @@ Moving Sushi co-founder Mike Markovina discusses the findings of the Marine Reso
 Link: https://www.youtube.com/watch?v=jvnjOUWk4js
 
 > Contributor: Demi 
+
+---
+
+## A taxonomy for reproducible and replicable research in environmental modelling (B.T Essawy et al., 2020).
+
+The paper discusses how cyberinfrastructure aids in reproducible workflows. It highlights tools such as GitHub and Figshare while introducing a new tool called Sciunit (http://sciunit.run). Sciunit integrates all digital artifacts of a research project—including code, data, and scripts—alongside the research paper, providing a more complete record of the research. Prior studies found that Sciunit improved reproducibility in computational analysis but lacked mechanisms for community sharing. In contrast, another tool called Hydroshare (http://www.hydroshare.org) enables the sharing of code, data, and metadata but does not confine all research components into a single package. Therefore, using Sciunit and Hydroshare together offers the best solution: Sciunit packages data and code, while Hydroshare aids in sharing within a broader community.
+
+Link: https://doi.org/10.1016/j.envsoft.2020.104753
+
+> Contributor: Duncan Sephton
+
+---
+
+## Reproducibility in ecology and evolution: Minimum standards for data and code. 
+
+This paper highlights the growing need for reproducibility in ecology and evolution by establishing minimum standards for sharing data and code. While informal data sharing has long been a practice, the authors argue that modern research must provide accessible, well-documented datasets and analytical code to ensure transparency, facilitate reuse, and improve scientific progress. They advocate for open data repositories following FAIR principles (Findable, Accessible, Interoperable, Reusable) and emphasize that journals and funding bodies should require complete datasets, metadata, and code as a condition for publication. The paper also discusses acceptable exemptions for sensitive data, including human subjects and endangered species. By adopting standardized data-sharing practices, the ecological and evolutionary research communities can enhance reproducibility and long-term data utility.
+
+Link: https://onlinelibrary.wiley.com/doi/10.1002/ece3.9961
+
+> Contributor: Bianca Louw 
+
+---
+
+## What Makes Science True? | NOVA (https://youtu.be/NGFO0kdbZmk?si=3gTPU4O113mimgwD)
+
+[Youtube Video uploaded by "NOVA PBS Official", produced by "Dakin Henderson and Kelly Thomson"]
+This video goes into the reasons for and the effects of the 'reproducibility crisis', where many (exploratory) studies are taken as fact without there having been an attempt to reproduce the study - this is in part as a result of exploratory studies being funded and not reproducibilty studies. It has been found that many drugs fail when they get to the clinical trial phase and this is thought to be due to a lack of proper validation of the studies before reaching that point - suggesting why it is important for there to be repeated testing in the initial research into the drug. Lastly, although most data on study replicability has been in psyclology and biomedical sciences, it is known that it is a far more widespread issue.
+
+> Contributor: Catharina
+
+---
+
+## A beginners guide to producing reproducible research (Alston and Rick,2021)
+
+The “Replication crisis” is a research barrier that hinders the ability of scientific results being reproduced. This paper emphasises why we should strive towards reproducible research; the possible challenges and the continuous steps we can take to produce reproducible research. Reproducible research allows for quicker and easier analysis without the need to start from baseline. It also indicates transparency and trustworthiness to reviewers and scientific peers ,thus increasing citations thereof. This encourages follow-up studies and easy correction of mistakes. However complex biological systems might be more difficult to reproduce, and propriety programs prevent global accessibility. Historical software and hardware may also hinder the ability to access data.
+ There is a standard for reproducibility, and this includes ensuring reproducibility before, during and after analysis. The data should be backed up in multiple locations to prevent any data loss. The data should also be changed to “tidy” format to allow easy analysis and manipulation. During analysis, it is important that all operations be done using annotated scripts to allow for repetition. Thus, we should finally share this data and code with all its parameters to ensure public accessibility. In conclusion, reproducible research is a process and should be consistently strived for.
+
+References
+Alston, J.M. and Rick, J.A., 2021. A beginner’s guide to conducting reproducible research. Bulletin of the Ecological Society of America, 102(2), pp.1-14.
+
+> Contributor: Kauthar Ismail
+
+---
+
+## Research Culture is Broken; Open Science can Fix It | Rachael Ainsworth | TEDxMacclesfield
+
+Open science as a movement is a growing practice in which science is done in such a way that research is openly shared with the public and allows for collaboration, contribution and access to the latest findings and methods. This TED talk dives into some of the current downfalls of our modern research culture and show how open science could be the key to mitigating these problems.
+
+Link: https://youtu.be/c-bemNZ-IqA
+
+> Contributor: Timothy Muthama
+
+---
+
+## Wilson et al. (2017) "Good enough practices in scientific computing"
+
+Computers are essential in science, yet many researchers lack basic computational skills, leading to lost data and inefficiencies. Just as lab work requires structured documentation, computational research needs organized data, clear workflows, and reproducibility.
+
+"Good Enough Practices in Scientific Computing" offers practical guidelines for researchers of any skill level, covering data management, programming, project organization, and collaboration. Drawn from real-world experience, these simple strategies help streamline research, improve transparency, and make scientific work more efficient and reliable.
+
+Link: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
+
+> Contributor: Jess
+
+---
+
+## Wildlife biology, big data, and reproducible research, (Lewis, Van der Wal and Fifield, 2018).
+
+This paper reviews the current state of reproducible research and data management in the field of wildlife biology. Lewis et al. (2018) share the merits of reproducible research and take you through how the type and scale of data have changed in the field of wildlife biology in the last few years. This change, according to them, necessitates a shift to increased reproducibility and more rigorous data management. They provide various case studies showing how it can be implemented (which provides tangible examples to wrap your head around the concept). They also suggest various courses of action that would allow reproducibility and data management to be mainstream in the field, including education, usage of freely available software such as GitHub and willingness to share data. Finally, they also mention potential limitations to this form of research management in the field of wildlife biology specifically, but suggest that a broader shift to ensuring reproducible research will be holistically beneficial to the field.
+
+Link: https://doi.org/10.1002/wsb.847
+
+> Contributor: Connor
+
+---
+
