@@ -280,6 +280,16 @@ Link: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1
 
 ---
 
+## Reproducibility in ecology and evolution: Minimum standards for data and code. 
+
+This paper highlights the growing need for reproducibility in ecology and evolution by establishing minimum standards for sharing data and code. While informal data sharing has long been a practice, the authors argue that modern research must provide accessible, well-documented datasets and analytical code to ensure transparency, facilitate reuse, and improve scientific progress. They advocate for open data repositories following FAIR principles (Findable, Accessible, Interoperable, Reusable) and emphasize that journals and funding bodies should require complete datasets, metadata, and code as a condition for publication. The paper also discusses acceptable exemptions for sensitive data, including human subjects and endangered species. By adopting standardized data-sharing practices, the ecological and evolutionary research communities can enhance reproducibility and long-term data utility.
+
+Link: https://onlinelibrary.wiley.com/doi/10.1002/ece3.9961
+
+> Contributor: Bianca Louw 
+
+---
+
 ## What Makes Science True? | NOVA (https://youtu.be/NGFO0kdbZmk?si=3gTPU4O113mimgwD)
 
 [Youtube Video uploaded by "NOVA PBS Official", produced by "Dakin Henderson and Kelly Thomson"]
