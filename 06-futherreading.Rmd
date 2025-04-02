@@ -276,7 +276,20 @@ Hampton et al. (2015) logically and enthusiastically advocate for a shift in min
 
 Link: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1
 
-> Contributor: Arwenn
+Contributor: Arwenn
+
+---
+
+## Data management: The first step in reproducible research. 
+
+Soundararajan, S., Mishra, S., 2023. This paper highlights the importance of good data management in producing credible research findings. The authors claim that data collection is an often overlooked yet, important aspect that should be considered to reduce research misconduct. Some of the important aspects identified in this paper include data preparation that involves proper organization of the files, use of correctly labelled folders, and proper documentation to make sure that data is easily understood and easily accessible. They also stress on the interoperability that enables other people to use the data without the help of the primary investigators, data storage and sharing policies including data management plans.  The paper is significant as it focuses on a real yet rarely addressed issue in research. While the discussions on methodology and analysis are frequent, this paper brings to light the otherwise hidden work of data management and how it directly impacts the quality and replicability of research conclusions.  The authors have come up with a set of practical steps that any researcher can use in any field to ensure that data is handled properly and that weakens the scientific process. It is a call for researchers to progress from merely producing data to managing it as a product which can be used again.
+
+
+> Contributor: Amarah
+Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC10880825/
+Reference: Soundararajan, S., Mishra, S., 2023. Data management: The first step in reproducible research. Indian J Occup Environ Med 27(4), 359-363.
+
+---
 
 ---
 
