@@ -227,18 +227,58 @@ I advocate that ***it is foolish to collect data without doing quality assurance
 knitr::include_graphics("img/veldwatch.png")
 ```
 
-There are many tools that allow you to do quality assurance and quality control as you collect the data (or progressively shortly after data collection events). Even just MS Excel or GoogleSheets with controlled fields etc.
+There are many tools that allow you to do quality assurance and quality control as you collect the data (or progressively shortly after data collection events). See [**Epicollect**](https://five.epicollect.net/) or the [**QField**](https://qfield.org/) plug-in for QGIS. Even just MS Excel or GoogleSheets with controlled fields etc.
 
 ## Describe, Preserve, Discover {.smaller background-color="#c2c190"}
 
-::::: columns
-::: {.column width="55%"}
-```{r fairdata, echo=FALSE, fig.cap = "The FAIR data principles [ErrantScience.com](https://errantscience.com/).", fig.width=3, fig.align = 'center', out.width="100%"}
+
+```{r fairdata, echo=FALSE, fig.cap = "The FAIR data principles [ErrantScience.com](https://errantscience.com/).", fig.width=3, fig.align = 'center', out.width="60%"}
 knitr::include_graphics("img/fairdata.jpg")
 ```
+
+
+## Describe {.smaller background-color="#c2c190"}
+
+*Metadata* = descriptive data about the data
+
+- the study context
+  - why the data were collected, and when and where
+  - who funded, created, collected, assured, managed and owns the data (not always the same person) - and their contact details
+  - where the data are stored
+- the data format
+  - what is the file format and what software (and their versions) were used
+- the data content
+  - what was measured and how
+  - what the columns and rows are and what units they're in
+  - what QA/QC has been applied
+  - etc
+
+## Preserve {.smaller background-color="#c2c190"}
+
+::::: columns
+::: {.column width="50%"}
+
+### Short term
+
+***Back your data up now!!!*** 
+
+***And now!!!***
+
+Losing your data can be incredibly inconvenient!!! 
+
+And incredibly expensive!!! 
+- to you (extra years studying)
+- to whoever pays for your study...
+
+<br>
+
+Check out [How Toy Story 2 Almost Got Deleted](https://www.youtube.com/watch?v=8dhp_20j0Ys).
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%"}
+
+### Long term
+
 **Global databases:**
 
 -   [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) - for molecular data
@@ -252,6 +292,32 @@ knitr::include_graphics("img/fairdata.jpg")
 **"Generalist" repositories:**
 
 -   [FigShare](https://figshare.com/) (incl. UCT's [ZivaHub](https://zivahub.uct.ac.za/)), [Zenodo](https://zenodo.org/)
+:::
+:::::
+
+## Discover {.smaller background-color="#c2c190"}
+
+::::: columns
+::: {.column width="50%"}
+Data that are not shared are effectively lost to science, and thus cannot be discovered or built upon by others.
+
+Preserving your data in a well-known database with good metadata and a clear license allows others to discover and reuse your data, thus facilitating scientific progress. 
+
+There are many license options like the [Creative Commons](https://creativecommons.org/licenses/) suite, which allow you to specify how your data can be used by others, while still giving you credit for your work. For software or code, there are other specific licenses like [MIT](https://opensource.org/licenses/MIT) or [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html), but these are not usually used for data.
+
+:::
+::: {.column width="45%"}
+
+**Creative Commons Licenses:**
+
+- CCO = it is *Open* - i.e. no restrictions
+- CC BY = *by attribution* 
+- CC BY-SA = *by attribution* + *share alike* 
+- CC BY-ND = *by attribution* + *no derivatives*
+- CC BY-NC = *by attribution* + *non-commercial* 
+- CC BY-NC-SA = *by attribution* + *non-commercial* + *share alike*
+- CC BY-NC-ND - *by attribution* + *non-commercial* + *no derivatives*
+
 :::
 :::::
 
@@ -345,13 +411,31 @@ Coding is communication. Messy code is bad communication. Bad communication hamp
 
 [^3_reproducibility-3]: Although to be fair many of these softwares now allow you to save what you did as a "macro" or similar
 
+
+## Why write code? {.smaller background-color="#c2c190"}
+
+::::: columns
+::: {.column width="50%"}
+![Artwork \@allison_horst](img/R_allisonhorst.png)
+:::
+
+::: {.column width="50%"}
+"Point-and-click" software may seem easier, but you'll regret it in the long run... e.g. When you have to rerun your analysis?
+
+-   Code is essential for reproducibility and automation.
+-   While many software now allow you to save what you did as a script or "macro", but they are usually not open source and not easily shared or reused.
+
+R, Python, etc are open source and allow you to do almost any analysis in one workflow - even calling other software.
+:::
+:::::
+
 ## Why write code? {.smaller background-color="#c2c190"}
 
 -   **Automation** - reusing code is one click, and you're unlikely to introduce errors
 -   A script provides a **record of your analysis**
 -   **Uninterrupted workflows** - scientific coding languages like Python or R allow you to run almost any kind of analysis in one scripted workflow
     -   GIS, phylogenetics, multivariate or Bayesian statistics, etc
-    -   saves you manually exporting and importing data between softwares
+    -   saves you manually exporting and importing data between software
 -   Most coding languages are **open source** (e.g. R, Python, JavaScript, etc)
     -   **Free!** No one has to pay to reuse any code you share
     -   **Transparent** - You (and others) can check the background code and functions you're using, not just the software company
@@ -407,20 +491,26 @@ Check out the [Tidyverse style guide](https://style.tidyverse.org/index.html) fo
 
 Version control tools can be challenging , but also hugely simplify your workflow!
 
-The advantages of version control[^3_reproducibility-2]:
+The advantages of version control[^1]:
 
-::: {.incremental}
+[^1]: `Terminology` for Git and [GitHub](https://github.com/), but most have similar functions.
 
-[^3_reproducibility-2]: We'll use Git and [GitHub](https://github.com/), but most have similar functions. You can look up `technical terms` [here](https://docs.github.com/en/get-started/quickstart).
+:::::: columns
+::: {.column width="15%"}
+![](img/octicons-mark-github.svg)
+:::
 
+:::: {.column width="85%"}
+::: incremental
 -   They generally help project management, especially **collaborations**
 -   They allow **easy code sharing** with collaborators or the public at large - through `repositories` ("repos") or `gists` (code snippets)
--   The **system is online**, but you **can also work offline** by `cloning` the repo to your local PC. You can "`push` to" or "`pull` from" the online repo to keep versions in sync.
+-   The **system is online**, but you **can also work offline** by `cloning` the repo to your local PC. You can "`push` to" or "`pull` from" the online repo to keep versions in sync
 -   **Changes are tracked and reversible** through `commits`
-    -   Any changes in a repo must be `commit`ed with a `commit message`. Each `commit` is a recoverable `version` that can be `compared` or `reverted` to
-    -   This is **the essence of version control** and magically frees you from duplicated files!
-    
+    -   Changes must be `commit`ed with a `commit message` - creating a recoverable `version` that can be `compared` or `reverted`
+    -   **Version control** magically frees you from duplicated files!
 :::
+::::
+::::::
 
 ## Version control continued... {.smaller background-color="#c2c190"}
 
@@ -435,16 +525,6 @@ The advantages of version control[^3_reproducibility-2]:
 
 :::
 
-
-## Version control in pretty pictures {.smaller background-color="#c2c190"}
-
-![Artwork by \@allison_horst [CC-BY-4.0](https://github.com/allisonhorst/stats-illustrations/blob/main/license)](img/git_commit.png)
-
-## Version control in pretty pictures {.smaller background-color="#c2c190"}
-
-![Artwork by \@allison_horst [CC-BY-4.0](https://github.com/allisonhorst/stats-illustrations/blob/main/license)](img/git_navigate.png)
-
-
 ## Version control - example workflow {.smaller background-color="#c2c190"}
 
 ![](img/GitDiagram.drawio.png)
@@ -456,52 +536,100 @@ The advantages of version control[^3_reproducibility-2]:
 Interestingly, since all that's tracked are the _commits_, whereby versions are named (the nodes in the image). All that the online Git repo records is this figure below. The black is the the OWNER's _main_ branch and the blue is the COLLABORATOR's _fork_.
 
 
-## 4. Computing environment {.smaller background-color="#33431e"}
+## Version control in pretty pictures {.smaller background-color="#c2c190"}
+
+![Artwork by \@allison_horst [CC-BY-4.0](https://github.com/allisonhorst/stats-illustrations/blob/main/license)](img/git_commit.png)
+
+## Version control in pretty pictures {.smaller background-color="#c2c190"}
+
+![Artwork by \@allison_horst [CC-BY-4.0](https://github.com/allisonhorst/stats-illustrations/blob/main/license)](img/git_navigate.png)
+
+## 4. Computing environment {background-color="#33431e"}
+
+<br>
 
 Sharing your code and data is not enough to maintain reproducibility...
 
-***Software and hardware change with upgrades, versions or user community preferences!***
+***Software and hardware change between users, with upgrades, versions or user community preferences!***
 
 -   You'll all know MicroSoft Excel, but have you heard of Quattro Pro or Lotus that were the preferred spreadsheet software of yesteryear?
 
-The ***simple solution*** is to **carefully document the hardware and versions of software** used so that others can recreate that computing environment if needed.
+## The lazy solution {.smaller background-color="#c2c190"}
 
--   In R, you can simply run the `sessionInfo()` function, giving details like so:
+You can document the hardware and versions of software used so that others can recreate that computing environment if needed.
+
+-   In R, you can simply run the `sessionInfo()` function, giving details below
+-   This just makes it someone else's problem to recreate your computing environment (usually you!), which is not ideal...
 
 ```{r}
 sessionInfo()
 ```
 
-## 4. Computing environment cont. {.smaller background-color="#33431e"}
+## A better solution {.smaller background-color="#c2c190"}
+
+If your entire workflow is within R, you can use the [renv](https://rstudio.github.io/renv/) package to manage your R environment.
+
+::::: columns
+::: {.column width="15%"}
+![](img/renv.svg)
+:::
+
+::: {.column width="85%"}
+`renv` is essentially a package manager.
+
+It creates a **snapshot** of your R environment, including all packages and their versions, so that anyone can recreate the same environment by running `renv::restore()`
 
 <br>
 
-### Containers
+Disadvantages are that it doesn't manage for:
 
-A ***better solution*** is to use **containers** like [docker](https://www.docker.com/) or [singularity](https://sylabs.io/singularity/).
+-   Different versions of R
+-   Different operating systems
+-   Software outside of R (e.g. JAGS, Stan, Python, GitHub etc)
+:::
+:::::
+
+## The best solution? {.smaller background-color="#c2c190"}
+
+Use **containers** like those provided by software like [docker](https://www.docker.com/) or [singularity](https://sylabs.io/singularity/).
+
+::::: columns
+::: {.column width="15%"}
+![](img/docker.png)
 
 <br>
 
-These are contained, lightweight computing environments similar to [virtual machines](https://en.wikipedia.org/wiki/Virtual_machine), that you can package with your software/workflow.
+<br>
 
 <br>
+
+![](img/rocker.png)
+:::
+
+::: {.column width="85%"}
+Containers provide "images" of contained, lightweight computing environments that you can package with your software/workflow to set up [virtual machines](https://en.wikipedia.org/wiki/Virtual_machine) with all the necessary software and settings etc.
 
 You set your container up to have everything you need to run your workflow (and nothing extra), so anyone can download (or clone) your container, code and data and run your analyses perfectly every time.
 
-<br>
+Containers are usually based on Linux, because other operating systems are not free.
+
+The [Rocker project](https://www.rocker-project.org/) provides a set of Docker images for R and RStudio, which are widely used in the R community.
+:::
+:::::
 
 ## 5. Sharing data, code, publication etc {.smaller background-color="#33431e"}
 
 :::::: columns
 ::: {.column width="50%"}
-This is covered in more detail in the data management section, but suffice to say there's no point working reproducibly if you're not going to share all the components necessary to complete your workflow...
+This is covered by data management, but suffice to say there's no point working reproducibly if you're not going to share all the components necessary to complete your workflow...
 
 <br>
 
 Another key component here is that ideally all your data, code, publication etc are shared *Open Access*
 
 -   not stuck behind some paywall!
--   shared with a permissable use license
+-   not in a proprietary format or requiring proprietary software
+-   shared with a permissive use license
     -   e.g. [Creative Commons](https://creativecommons.org/licenses/)
 :::
 
@@ -512,5 +640,119 @@ Another key component here is that ideally all your data, code, publication etc 
 ![A 3-step, 10-point checklist to guide researchers toward greater reproducibility [@Alston2021].](img/alstonreproducibility.jpg)
 :::
 ::::::
+
+::::
+
+## Automation? {.smaller background-color="#33431e"}
+
+The key to iterating your workflow, especially for forecasting.
+
+Many options!
+
+::: incremental
+-   **Makefiles** - a simple text file that defines how to run your code, e.g. in R, Python, etc
+-   **RMarkdown** or **Quarto** - allow you to write code and text in the same document, which can be run to produce a report, website, etc
+-   **GitHub Actions** - allows you to automate workflows in GitHub, e.g. running tests, building documentation, etc
+-   **R** - R has many packages for automating workflows, e.g. [`targets`](https://docs.ropensci.org/targets/)
+:::
+
+## An example {.smaller background-color="#33431e"}
+
+![](img/emma_logo.jpg)
+
+The project aims to develop a near-real-time satellite change detection system for the Fynbos Biome using an ecological forecasting approach ([www.emma.eco](www.emma.eco)).
+
+## An example {.smaller background-color="#33431e"}
+
+![](img/emma_nasa.png){fig-align="center"}
+
+## EMMA Workflow {.smaller background-color="#c2c190"}
+
+::::: columns
+::: {.column width="30%"}
+![](img/emma_workflow.png)
+:::
+
+::: {.column width="70%"}
+<br>
+
+The workflow is designed to be run on a weekly basis, with new data ingested and processed automatically.
+
+There are several steps, each of which is run automatically:
+
+-   **Data ingest** - new data is downloaded from various APIs
+-   **Data processing** - to extract the relevant info and reformat for analysis
+-   **Data analysis** - the data is analysed to detect changes in the environment
+-   **Data visualization and sharing** - via a Quarto website run from a GitHub repository
+:::
+:::::
+
+## EMMA Workflow {.smaller background-color="#c2c190"}
+
+::::: columns
+::: {.column width="12%"}
+![](img/quarto.png)
+
+![](img/Rlogo.png){width="80%"} ![](img/targets_logo.png){width="80%"}
+
+![](img/github_actions.webp){width="80%"} ![](img/docker.png){width="80%"}
+
+![](img/octicons-mark-github.svg){width="80%"}
+:::
+
+::: {.column width="85%"}
+Outputs a `Quarto` website, automatically built from a GitHub repository.
+
+<br>
+
+Processing and analysis done in R. Intermediate and final outputs stored as GitHub releases or in GitHub Large File Storage.
+
+<br>
+
+R workflow managed by the `targets` package
+
+<br>
+
+`GitHub Actions` used to automate and run the workflow
+
+<br>
+
+`Docker` container sets up the computing environment
+
+<br>
+
+All code, data, metadata, etc are shared on `GitHub`
+:::
+:::::
+
+## EMMA `targets` Workflow {.smaller background-color="#c2c190"}
+
+::::: columns
+::: {.column width="40%"}
+![Example `targets` workflow from https://wlandau.github.io/targets-tutorial/#8](img/targets_pipeline_graph.png){width="100%"}
+
+![EMMA targets workflow](img/emma_targets.png)
+:::
+
+::: {.column width="60%"}
+`targets` is an R package that allows you to define a workflow as a series of steps, each of which can be run automatically.
+
+<br>
+
+The package identifies which steps are out of date and runs them and their dependencies, but ignores unaffected steps, saving computation.
+
+<br>
+
+In EMMA, the workflow is defined as a series of R scripts, which is run automatically by GitHub Actions on a weekly basis, triggered by a GitHub runner. `targets` keeps track and controls which steps have been run and which need to be rerun depending on new data inputs, etc.
+:::
+:::::
+
+## Unit testing {background-color="#33431e"}
+
+-   A key component of automation is **unit testing**
+    -   testing each component of your code to ensure it works as expected
+-   This is a part of general coding and code management, but is especially important for forecasting, where you need to ensure that your code runs correctly on new data
+-   R has many packages for unit testing, e.g. [`testthat`](https://testthat.r-lib.org/) and [`RUnit`](https://cran.r-project.org/web/packages/RUnit/index.html)
+
 
 ## References {.smaller background-color="#33431e"}
