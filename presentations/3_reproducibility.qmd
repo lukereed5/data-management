@@ -241,6 +241,8 @@ knitr::include_graphics("img/fairdata.jpg")
 
 *Metadata* = descriptive data about the data
 
+::: fragment
+
 - the study context
   - why the data were collected, and when and where
   - who funded, created, collected, assured, managed and owns the data (not always the same person) - and their contact details
@@ -252,6 +254,8 @@ knitr::include_graphics("img/fairdata.jpg")
   - what the columns and rows are and what units they're in
   - what QA/QC has been applied
   - etc
+
+:::
 
 ## Preserve {.smaller background-color="#c2c190"}
 
@@ -277,6 +281,8 @@ Check out [How Toy Story 2 Almost Got Deleted](https://www.youtube.com/watch?v=8
 
 ::: {.column width="50%"}
 
+::: fragment
+
 ### Long term
 
 **Global databases:**
@@ -292,8 +298,26 @@ Check out [How Toy Story 2 Almost Got Deleted](https://www.youtube.com/watch?v=8
 **"Generalist" repositories:**
 
 -   [FigShare](https://figshare.com/) (incl. UCT's [ZivaHub](https://zivahub.uct.ac.za/)), [Zenodo](https://zenodo.org/)
+
+:::
 :::
 :::::
+
+## Preserve {background-color="#c2c190"}
+
+A key consideration here is data _provenance_ - the history of the data, including where it came from, how it was collected, and any transformations or analyses that have been applied.
+
+::: fragment
+
+It is very easy to lose track of data provenance, especially before long-term storage, and especially when working with large datasets or multiple collaborators. This can lead to confusion and errors in the analysis.
+
+:::
+
+::: fragment
+
+Ideally, you never alter the raw data directly. Use a code script to create a "clean" or "processed" version of the data that you work with. This keeps the raw data intact and the script documents all changes.
+
+:::
 
 ## Discover {.smaller background-color="#c2c190"}
 
@@ -306,7 +330,10 @@ Preserving your data in a well-known database with good metadata and a clear lic
 There are many license options like the [Creative Commons](https://creativecommons.org/licenses/) suite, which allow you to specify how your data can be used by others, while still giving you credit for your work. For software or code, there are other specific licenses like [MIT](https://opensource.org/licenses/MIT) or [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html), but these are not usually used for data.
 
 :::
+
 ::: {.column width="45%"}
+
+::: fragment
 
 **Creative Commons Licenses:**
 
@@ -318,6 +345,7 @@ There are many license options like the [Creative Commons](https://creativecommo
 - CC BY-NC-SA = *by attribution* + *non-commercial* + *share alike*
 - CC BY-NC-ND - *by attribution* + *non-commercial* + *no derivatives*
 
+:::
 :::
 :::::
 
