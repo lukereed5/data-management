@@ -29,6 +29,16 @@ That should be it!
 
 ---
 
+## Ivimey-Cook et al. (2025) “From policy to practice: progress towards data- and code-sharing in ecology and evolution”
+
+Code and data sharing are a key component in creating reproducible research. However, in ecology and evolution journals, compliance with policy regarding code and data sharing is poor. This paper investigated data and code sharing policies and compliance for 275 journals in ecology and evolution. The study found that only 22.5% encouraged data sharing and only 38.2% made data sharing mandatory. Similarly, only 26.6% and 26.9% had encouraged and mandatory code sharing, respectively. This paper also provides seven recommendations for journals on how to improve data and code sharing policies and compliance. Recommendations included: policies must be findable and clear, code sharing must be mandatory, policies must be applicable to all types of data, and journals should have data editors to assess data and code quality. This paper is interesting as it looks at the role of policy in promoting reproducible research and how journals can more effectively create and uphold policies.  
+
+https://doi.org/10.1098/rspb.2025.1394
+
+> Contributor: Hannah
+
+---
+
 ## Multi-Stakeholder Research Data Management Training as a Tool to Improve the Quality, Integrity, Reliability and Reproducibility of Research
 
 This paper focuses on something very important for data management and reproducible research: it evaluates a training program designed to enhance research data management (RDM) competencies among doctoral students and postdoctoral researchers. The program was quite interesting because it was collaborative, bringing together multiple stakeholders. It was also at a generic level, which means it was designed not to be overly specific to one discipline but rather relevant across a range of disciplines. Their finding was essentially that training can improve understanding of RDM practices. Feedback and competency ratings from participants in the program indicated that "key RDM practices, such as data planning, documentation, and organization, were better understood after the training."
