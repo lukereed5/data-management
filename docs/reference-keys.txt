@@ -103,3 +103,4 @@ wilson-et-al.-2017-good-enough-practices-in-scientific-computing
 wildlife-biology-big-data-and-reproducible-research-lewis-van-der-wal-and-fifield-2018.
 how-fair-are-plant-sciences-in-the-twenty-first-century-the-pressing-need-for-reproducibility-in-plant-ecology-and-evolution
 fig:rstudiosuccess
+ivimey-cook-et-al.-2025-from-policy-to-practice-progress-towards-data--and-code-sharing-in-ecology-and-evolution

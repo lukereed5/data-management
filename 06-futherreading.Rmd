@@ -44,7 +44,8 @@ https://doi.org/10.1098/rspb.2025.1394
 This paper focuses on something very important for data management and reproducible research: it evaluates a training program designed to enhance research data management (RDM) competencies among doctoral students and postdoctoral researchers. The program was quite interesting because it was collaborative, bringing together multiple stakeholders. It was also at a generic level, which means it was designed not to be overly specific to one discipline but rather relevant across a range of disciplines. Their finding was essentially that training can improve understanding of RDM practices. Feedback and competency ratings from participants in the program indicated that "key RDM practices, such as data planning, documentation, and organization, were better understood after the training."
 
 https://liberquarterly.eu/article/view/11726/13897
-Ayanda
+
+> Contributor: Ayanda
 
 ---
 
