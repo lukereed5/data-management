@@ -29,6 +29,13 @@ That should be it!
 > Contributor: Jasper
 
 ---
+## Samuel & König-Ries (2021) "Understanding experiments and research practices for reproducibility: An exploratory study. PeerJ"
+
+This study discusses how even though over 90% of researchers agree that there is a reproducibility crisis, there is still a lack of effort to increase reproducibility. This study identifies some of the barriers to this as poor documentation, a lack of shared data and code, as well as insufficient openness around methods.Another contributing factor is also institutional culture and incentives surrounding research.
+
+https://peerj.com/articles/11140/
+
+> Contributor: Luke Reed
 
 ## Webinar about irreproducibility in Ecology 
 
